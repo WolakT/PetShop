@@ -25,9 +25,9 @@ public class Cat implements Comparable<Cat> {
     @Override
     public int compareTo(Cat cat) {
         if (this.getAge()>cat.getAge())
-        return 1;
+        return -1;
         else if(this.getAge()<cat.getAge())
-            return -1;
+            return 1;
         else return 0;
     }
 }
